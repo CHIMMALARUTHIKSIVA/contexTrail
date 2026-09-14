@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contextrail | Your Context, On Rails</title>
+    <meta name="description" content="Local-first memory layer that lets your context follow you across every AI tool. Sub-10ms local semantic retrieval powered by Moss, zero cloud sync.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="min-h-screen bg-[#050505] selection:bg-[#FF4500] selection:text-white relative">
+        <!-- Global Noise Overlay -->
+        <div class="noise-overlay"></div>
+
+        <!-- Navigation -->
+        <nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-8">
+            <div class="container mx-auto px-6 flex items-center justify-between">
+                <a href="#" id="nav-logo-link" class="text-2xl font-bold tracking-tighter font-serif text-white hover:text-[#FF4500] transition-colors flex items-center gap-2">
+                    <span class="w-3 h-3 rounded-full bg-[#FF4500]"></span>
+                    Contextrail.
+                </a>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#expertise" id="nav-expertise-link" class="text-sm text-gray-400 hover:text-white transition-colors duration-300">Philosophy</a>
+                    <a href="#works" id="nav-works-link" class="text-sm text-gray-400 hover:text-white transition-colors duration-300">Pillars</a>
+                    <a href="#simulator" id="nav-simulator-link" class="text-sm text-gray-400 hover:text-white transition-colors duration-300">Live Simulator</a>
+                    <a href="#perspectives" id="nav-perspectives-link" class="text-sm text-gray-400 hover:text-white transition-colors duration-300">Matrix</a>
+                </div>
+
+                <a href="#simulator" id="nav-cta-link" class="inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium bg-white text-black hover:scale-105 hover:bg-gray-100 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.2)]">
+                    Launch Dashboard
+                </a>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 pb-20 bg-[#050505]">
+            <!-- Background Atmosphere -->
+            <div class="absolute inset-0 z-0 pointer-events-none select-none">
+                <div class="absolute top-0 left-0 w-full h-full opacity-60 mix-blend-screen">
+                    <img src="https://framerusercontent.com/images/9zvwRJAavKKacVyhFCwHyXW1U.png?width=1536&height=1024" alt="Atmosphere" class="w-full h-full object-cover object-center opacity-80">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#050505] z-10"></div>
+            </div>
+
+            <!-- Floating Surrealist Elements -->
+            <div class="absolute -left-[10%] top-[-10%] md:left-[-5%] md:top-[-15%] w-[50vw] md:w-[40vw] max-w-[800px] z-10 pointer-events-none mix-blend-hard-light opacity-80 animate-float-left">
+                 <img src="https://framerusercontent.com/images/KNhiA5A2ykNYqNkj04Hk6BVg5A.png?width=1540&height=1320" alt="Hand Reaching" class="w-full h-auto object-contain">
+            </div>
+
+            <div class="absolute -right-[10%] bottom-[-10%] md:right-[-5%] md:bottom-[-5%] w-[45vw] md:w-[35vw] max-w-[700px] z-10 pointer-events-none mix-blend-hard-light opacity-80 animate-float-right">
+                 <img src="https://framerusercontent.com/images/X89VFCABCEjjZ4oLGa3PjbOmsA.png?width=1542&height=1002" alt="Hand Receiving" class="w-full h-auto object-contain">
+            </div>
+
+            <!-- Hero Content -->
+            <div class="container mx-auto px-6 relative z-20 text-center flex flex-col items-center justify-center h-full">
+                <div id="hero-content-wrapper" class="max-w-4xl mx-auto">
+                    <div class="reveal">
+                        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/15 bg-white/5 backdrop-blur-md text-xs uppercase tracking-widest text-[#FF4500] mb-8 font-mono">
+                            <span class="w-2 h-2 rounded-full bg-[#FF4500] animate-pulse"></span>
+                            The Zero Latency Builder Sprint 2026
+                        </div>
+                        <h1 class="text-5xl md:text-7xl lg:text-8xl font-medium leading-[1.08] tracking-tight mb-6 text-[#ffe0e0] mix-blend-overlay font-serif" 
+                            style="text-shadow: 0 0 16px rgba(255,255,255,0.75);">
+                            Contextrail. <br />
+                            <span class="italic font-light text-[#ffe0e0]">Your context, on rails.</span>
+                        </h1>
+                    </div>
+                    
+                    <div class="reveal" style="transition-delay: 200ms;">
+                        <p class="text-base md:text-xl text-[#ffe0e0]/90 max-w-2xl mx-auto mb-12 font-light tracking-wide leading-relaxed mix-blend-overlay"
+                           style="text-shadow: 0 0 12px rgba(255,255,255,0.71);">
+                            Every AI tool follows the same track, and nothing ever leaves your device. A local-first memory layer powered by Moss for sub-10ms context retrieval across Claude, ChatGPT, and coding agents.
+                        </p>
+                    </div>
+
+                    <div class="reveal flex flex-col sm:flex-row items-center justify-center gap-6" style="transition-delay: 400ms;">
+                        <a href="#simulator" class="relative group cursor-pointer w-full sm:w-auto">
+                           <div class="absolute inset-0 bg-[#FF4500]/30 blur-xl rounded-full opacity-70 group-hover:opacity-100 transition-opacity duration-500"></div>
+                           <div class="relative border border-[#FF4500]/50 bg-[#FF4500] px-8 py-3.5 rounded-full flex items-center justify-center gap-3 text-sm text-white font-medium uppercase tracking-wider hover:bg-[#ff5714] transition-all duration-300 shadow-lg">
+                             <span>Try Live Simulator</span>
+                             <iconify-icon icon="lucide:arrow-down-right" class="text-lg"></iconify-icon>
+                           </div>
+                        </a>
+
+                        <a href="#architecture" class="relative group cursor-pointer w-full sm:w-auto">
+                           <div class="relative border border-white/20 bg-white/5 backdrop-blur-sm px-8 py-3.5 rounded-full flex items-center justify-center gap-3 text-sm text-white/80 uppercase tracking-widest hover:bg-white/10 hover:text-white transition-colors duration-300">
+                             <span>Explore Architecture</span>
+                           </div>
+                        </a>
+                    </div>
+                    
+                    <div class="reveal flex items-center justify-center gap-4 text-[10px] md:text-xs text-white/50 uppercase tracking-widest mt-12 font-mono" style="transition-delay: 500ms;">
+                       <span id="current-time">11:11 PM EST</span>
+                       <span class="w-px h-3 bg-white/20"></span>
+                       <span>Localhost Stdio Transport</span>
+                       <span class="w-px h-3 bg-white/20"></span>
+                       <span class="text-emerald-400 flex items-center gap-1">
+                          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> 0 Outbound Packets
+                       </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Supported Ecosystem Section -->
+        <section id="expertise" class="py-32 relative border-t border-white/5">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center reveal">
+                    <h2 class="text-3xl md:text-5xl lg:text-6xl leading-tight text-white/90 mb-12 font-serif">
+                        We build the quiet memory layer where your AI workflow truly lives.
+                    </h2>
+                    <p class="text-xl md:text-2xl text-gray-400 leading-relaxed font-light">
+                        Elegance is refusal. We remove cloud latency, Docker complexity, and privacy leaks so your message and decisions resonate with absolute continuity.
+                    </p>
+                </div>
+
+                <!-- Ecosystem Logo Grid -->
+                <div class="mt-28">
+                    <p class="text-center text-xs uppercase tracking-widest text-gray-500 mb-12 font-mono">Seamless Multi-Tool Context Continuity</p>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                        <div class="reveal font-bold text-xl tracking-widest flex items-center gap-2 hover:text-[#FF4500]">
+                            <iconify-icon icon="simple-icons:anthropic" class="text-2xl"></iconify-icon> CLAUDE
+                        </div>
+                        <div class="reveal font-bold text-xl tracking-widest flex items-center gap-2 hover:text-[#FF4500]" style="transition-delay: 100ms;">
+                            <iconify-icon icon="lucide:code-2" class="text-2xl"></iconify-icon> CURSOR
+                        </div>
+                        <div class="reveal font-bold text-xl tracking-widest flex items-center gap-2 hover:text-[#FF4500]" style="transition-delay: 200ms;">
+                            <iconify-icon icon="simple-icons:openai" class="text-2xl"></iconify-icon> CHATGPT
+                        </div>
+                        <div class="reveal font-bold text-xl tracking-widest flex items-center gap-2 hover:text-[#FF4500]" style="transition-delay: 300ms;">
+                            <iconify-icon icon="lucide:wind" class="text-2xl"></iconify-icon> WINDSURF
+                        </div>
+                        <div class="reveal font-bold text-xl tracking-widest flex items-center gap-2 hover:text-[#FF4500]" style="transition-delay: 400ms;">
+                            <iconify-icon icon="simple-icons:zed" class="text-2xl"></iconify-icon> ZED
+                        </div>
+                        <div class="reveal font-bold text-xl tracking-widest flex items-center gap-2 hover:text-[#FF4500]" style="transition-delay: 500ms;">
+                            <iconify-icon icon="simple-icons:github" class="text-2xl"></iconify-icon> COPILOT
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pillars Section (Parallax Cards) -->
+        <section id="works" class="py-36 relative overflow-hidden bg-[#070707] border-t border-b border-white/5">
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="reveal mb-28 text-center">
+                    <h2 class="text-5xl md:text-7xl font-serif">
+                        Define your <br />
+                        <span class="italic text-[#FF4500]">local AI intelligence</span>
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <!-- Card 1 - Red Accent -->
+                    <div class="parallax-card-down">
+                        <div class="reveal bg-[#FF4500] rounded-3xl p-8 md:p-12 aspect-[4/5] flex flex-col justify-between shadow-2xl hover:shadow-[0_20px_50px_rgba(255,69,0,0.35)] transition-all duration-500 group cursor-pointer glow-hover">
+                            <div class="flex justify-between items-start">
+                                <div class="w-12 h-12 rounded-full bg-black/10 flex items-center justify-center group-hover:rotate-45 transition-transform duration-500">
+                                    <iconify-icon icon="lucide:cpu" class="text-black text-2xl"></iconify-icon>
+                                </div>
+                                <span class="text-black font-mono font-bold text-sm border border-black/20 px-3 py-1 rounded-full">01</span>
+                            </div>
+                            
+                            <div>
+                                <span class="text-black/60 font-mono text-xs uppercase tracking-widest">MCP Core Engine</span>
+                                <h3 class="text-4xl md:text-5xl text-black mb-4 leading-none tracking-tight font-serif mt-2">
+                                    Native MCP <br />Protocol
+                                </h3>
+                                <p class="text-black/80 text-lg leading-snug font-light">
+                                    Sub-10ms recall via stdio transport. Directly exposes <code>save_context</code> and <code>recall_context</code> tools into Claude, Cursor, and Zed.
+                                </p>
+                            </div>
+                            
+                            <div class="w-full h-px bg-black/15 mt-8"></div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 - Dark Card -->
+                    <div class="parallax-card-up md:mt-20">
+                        <div class="reveal bg-[#111] border border-white/10 rounded-3xl p-8 md:p-12 aspect-[4/5] flex flex-col justify-between shadow-2xl group cursor-pointer hover:border-[#FF4500]/50 transition-all duration-500" style="transition-delay: 150ms;">
+                            <div class="flex justify-between items-start">
+                                <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                                   <iconify-icon icon="lucide:clipboard-check" class="text-[#FF4500] text-2xl"></iconify-icon>
+                                </div>
+                                <span class="text-white/50 font-mono font-bold text-sm border border-white/10 px-3 py-1 rounded-full">02</span>
+                            </div>
+                            
+                            <div>
+                                <span class="text-gray-400 font-mono text-xs uppercase tracking-widest">Web Tool Bridge</span>
+                                <h3 class="text-4xl md:text-5xl text-white mb-4 leading-none tracking-tight font-serif mt-2">
+                                    Universal <br />Clipboard Tool
+                                </h3>
+                                <p class="text-gray-400 text-lg leading-snug font-light">
+                                    Select text in ChatGPT or Perplexity, hit your hotkey, and instantly stream context straight into your local Moss memory store.
+                                </p>
+                            </div>
+                            
+                            <div class="w-full h-px bg-white/10 mt-8"></div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 - Dark Card -->
+                    <div class="parallax-card-down">
+                        <div class="reveal bg-[#111] border border-white/10 rounded-3xl p-8 md:p-12 aspect-[4/5] flex flex-col justify-between shadow-2xl group cursor-pointer hover:border-[#FF4500]/50 transition-all duration-500" style="transition-delay: 200ms;">
+                            <div class="flex justify-between items-start">
+                                <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                                   <iconify-icon icon="lucide:activity" class="text-[#FF4500] text-2xl"></iconify-icon>
+                                </div>
+                                <span class="text-white/50 font-mono font-bold text-sm border border-white/10 px-3 py-1 rounded-full">03</span>
+                            </div>
+                            
+                            <div>
+                                <span class="text-gray-400 font-mono text-xs uppercase tracking-widest">Electron App</span>
+                                <h3 class="text-4xl md:text-5xl text-white mb-4 leading-none tracking-tight font-serif mt-2">
+                                    Real-Time <br />Dashboard
+                                </h3>
+                                <p class="text-gray-400 text-lg leading-snug font-light">
+                                    Live WebSocket event stream showing every memory save and recall event in real time with hardware-level latency counters on screen.
+                                </p>
+                            </div>
+                            
+                            <div class="w-full h-px bg-white/10 mt-8"></div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 - Dark Card with Orange Border -->
+                    <div class="parallax-card-up md:mt-20">
+                        <div class="reveal bg-[#161616] border border-[#FF4500]/40 rounded-3xl p-8 md:p-12 aspect-[4/5] flex flex-col justify-between shadow-2xl group cursor-pointer hover:border-[#FF4500] transition-all duration-500" style="transition-delay: 250ms;">
+                            <div class="flex justify-between items-start">
+                                <div class="w-12 h-12 rounded-full bg-[#FF4500]/20 flex items-center justify-center group-hover:rotate-45 transition-transform duration-500">
+                                   <iconify-icon icon="lucide:shield-check" class="text-[#FF4500] text-2xl"></iconify-icon>
+                                </div>
+                                <span class="text-[#FF4500] font-mono font-bold text-sm border border-[#FF4500]/30 px-3 py-1 rounded-full">04</span>
+                            </div>
+                            
+                            <div>
+                                <span class="text-[#FF4500] font-mono text-xs uppercase tracking-widest">Moss Rust Engine</span>
+                                <h3 class="text-4xl md:text-5xl text-white mb-4 leading-none tracking-tight font-serif mt-2">
+                                    100% Local <br />Privacy Proof
+                                </h3>
+                                <p class="text-gray-300 text-lg leading-snug font-light">
+                                    No Docker, no Postgres, no cloud vector DBs. Moss replaces the entire backend locally. Open your browser DevTools to prove 0 outbound calls.
+                                </p>
+                            </div>
+                            
+                            <div class="w-full h-px bg-white/10 mt-8"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Background Pattern Overlay -->
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] opacity-10 pointer-events-none"
+                 style="background-image: radial-gradient(circle, #444 1px, transparent 1px); background-size: 40px 40px;">
+            </div>
+        </section>
+
+        <!-- Interactive Memory Simulator Section -->
+        <section id="simulator" class="py-36 relative bg-[#050505]">
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="max-w-4xl mx-auto text-center reveal mb-16">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-xs font-mono text-emerald-400 mb-4">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Live In-Browser Sandbox
+                    </div>
+                    <h2 class="text-4xl md:text-6xl font-serif text-white mb-6">
+                        Test Contextrail in Real-Time
+                    </h2>
+                    <p class="text-gray-400 text-lg font-light">
+                        Simulate saving a decision in one AI tool and recalling it instantly in another with sub-10ms local retrieval.
+                    </p>
+                </div>
+
+                <div class="max-w-5xl mx-auto bg-[#0d0d0d] border border-white/10 rounded-3xl p-6 md:p-10 shadow-2xl reveal">
+                    <!-- Simulator Header Bar -->
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-8 border-b border-white/10">
+                        <div class="flex items-center gap-3">
+                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                            <span class="text-xs font-mono text-gray-500 ml-2">contextrail-engine --moss-local-mode</span>
+                        </div>
+                        
+                        <div id="sim-latency-badge" class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-mono bg-white/5 text-gray-300 border border-white/10">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Engine Ready | <span id="sim-memory-count" class="text-white font-bold">3</span> Memories Indexed
+                        </div>
+                    </div>
+
+                    <!-- Simulator Grid -->
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mt-8">
+                        <!-- Left Column: Save & Recall Controls -->
+                        <div class="lg:col-span-6 space-y-6">
+                            <!-- Action 1: Save Context -->
+                            <div class="bg-[#141414] p-6 rounded-2xl border border-white/5">
+                                <h3 class="text-sm font-semibold uppercase tracking-wider text-[#FF4500] font-mono mb-4 flex items-center gap-2">
+                                    <iconify-icon icon="lucide:arrow-down-to-line"></iconify-icon> Step 1: Save Context
+                                </h3>
+                                <form id="sim-save-form" class="space-y-4">
+                                    <div>
+                                        <label class="text-xs text-gray-400 mb-1 block">Context Source</label>
+                                        <select id="sim-source-select" class="w-full bg-black/60 border border-white/10 rounded-xl px-4 py-2.5 text-xs text-gray-200 focus:outline-none focus:border-[#FF4500]">
+                                            <option value="ChatGPT (Clipboard)">ChatGPT (Clipboard Hotkey)</option>
+                                            <option value="Claude Desktop (MCP)" selected>Claude Desktop (Native MCP)</option>
+                                            <option value="Cursor IDE (MCP)">Cursor IDE (Native MCP)</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label class="text-xs text-gray-400 mb-1 block">Decision or Memory snippet</label>
+                                        <textarea id="sim-save-input" rows="3" placeholder="e.g., We chose Moss Rust engine for on-device vector search because it delivers sub-10ms latency." class="w-full bg-black/60 border border-white/10 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-[#FF4500] resize-none"></textarea>
+                                    </div>
+                                    <button type="submit" class="w-full bg-white text-black hover:bg-[#FF4500] hover:text-white font-medium py-2.5 rounded-xl text-xs uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2">
+                                        <iconify-icon icon="lucide:plus-circle"></iconify-icon> Save to Local Moss Store
+                                    </button>
+                                </form>
+                            </div>
+
+                            <!-- Action 2: Recall Context -->
+                            <div class="bg-[#141414] p-6 rounded-2xl border border-white/5">
+                                <h3 class="text-sm font-semibold uppercase tracking-wider text-emerald-400 font-mono mb-4 flex items-center gap-2">
+                                    <iconify-icon icon="lucide:search"></iconify-icon> Step 2: Query / Recall Memory
+                                </h3>
+                                <div class="space-y-4">
+                                    <div class="flex gap-2">
+                                        <input type="text" id="sim-recall-input" placeholder="e.g., Why did we choose Moss Rust engine?" class="flex-1 bg-black/60 border border-white/10 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-emerald-400">
+                                        <button id="sim-recall-btn" class="bg-emerald-500 text-black hover:bg-emerald-400 font-medium px-5 py-2.5 rounded-xl text-xs uppercase tracking-wider transition-all duration-300 flex items-center gap-1.5">
+                                            <span>Recall</span>
+                                        </button>
+                                    </div>
+                                    <div class="flex flex-wrap gap-2 text-[11px] text-gray-400 font-mono">
+                                        <span>Try queries:</span>
+                                        <button onclick="document.getElementById('sim-recall-input').value='Moss Rust engine'; document.getElementById('sim-recall-btn').click();" class="text-gray-300 hover:text-[#FF4500] underline">"Moss Rust engine"</button>
+                                        <button onclick="document.getElementById('sim-recall-input').value='privacy cloud'; document.getElementById('sim-recall-btn').click();" class="text-gray-300 hover:text-[#FF4500] underline">"privacy cloud"</button>
+                                        <button onclick="document.getElementById('sim-recall-input').value='latency benchmark'; document.getElementById('sim-recall-btn').click();" class="text-gray-300 hover:text-[#FF4500] underline">"latency benchmark"</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Column: Outputs & Log Feed -->
+                        <div class="lg:col-span-6 space-y-6">
+                            <!-- Recall Results Area -->
+                            <div class="bg-[#141414] p-6 rounded-2xl border border-white/5 h-[230px] flex flex-col">
+                                <h4 class="text-xs font-mono uppercase tracking-wider text-gray-400 mb-3 flex items-center justify-between">
+                                    <span>Moss Semantic Match Output</span>
+                                    <span class="text-[10px] text-emerald-400">Local Vector Index</span>
+                                </h4>
+                                <div id="sim-recall-results" class="flex-1 overflow-y-auto pr-1 space-y-3">
+                                    <div class="text-sm text-gray-500 italic p-4 text-center">Type a query above to test Moss semantic recall...</div>
+                                </div>
+                            </div>
+
+                            <!-- Live Memory Store Feed -->
+                            <div class="bg-[#141414] p-6 rounded-2xl border border-white/5 h-[240px] flex flex-col">
+                                <h4 class="text-xs font-mono uppercase tracking-wider text-gray-400 mb-3 flex items-center justify-between">
+                                    <span>Stored Memories Index</span>
+                                    <span class="text-[10px] text-[#FF4500]">WebSocket Live Sync</span>
+                                </h4>
+                                <div id="sim-memory-feed" class="flex-1 overflow-y-auto pr-1 space-y-3">
+                                    <!-- Rendered dynamically -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Competitive Matrix Section -->
+        <section id="perspectives" class="py-36 relative border-t border-white/5 bg-[#080808]">
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="max-w-4xl mx-auto text-center reveal mb-20">
+                    <h2 class="text-4xl md:text-6xl font-serif text-white mb-6">
+                        Why Contextrail Wins
+                    </h2>
+                    <p class="text-gray-400 text-lg font-light">
+                        In July 2026, Mem0/OpenMemory deprecated its local Docker option in favor of a cloud MCP server. Contextrail fills the local-first memory void.
+                    </p>
+                </div>
+
+                <div class="max-w-4xl mx-auto overflow-x-auto reveal">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="border-b border-white/10 text-xs font-mono uppercase text-gray-400">
+                                <th class="py-4 px-6">Feature / Capability</th>
+                                <th class="py-4 px-6 text-[#FF4500]">Contextrail</th>
+                                <th class="py-4 px-6 text-gray-500">Mem0 / OpenMemory</th>
+                                <th class="py-4 px-6 text-gray-500">Zep / Supermemory</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-white/5 text-sm">
+                            <tr class="hover:bg-white/5 transition-colors">
+                                <td class="py-5 px-6 font-medium text-white">100% Local-First Architecture</td>
+                                <td class="py-5 px-6 text-emerald-400 font-mono flex items-center gap-1.5">
+                                    <iconify-icon icon="lucide:check-circle-2" class="text-lg"></iconify-icon> Yes (Zero Cloud)
+                                </td>
+                                <td class="py-5 px-6 text-red-400 font-mono">Deprecated Local (Cloud Only)</td>
+                                <td class="py-5 px-6 text-red-400 font-mono">Cloud Hosted</td>
+                            </tr>
+                            <tr class="hover:bg-white/5 transition-colors">
+                                <td class="py-5 px-6 font-medium text-white">Recall Latency</td>
+                                <td class="py-5 px-6 text-emerald-400 font-mono font-bold">&lt; 10ms (Moss Engine)</td>
+                                <td class="py-5 px-6 text-gray-400 font-mono">150ms - 400ms (Network)</td>
+                                <td class="py-5 px-6 text-gray-400 font-mono">200ms - 500ms</td>
+                            </tr>
+                            <tr class="hover:bg-white/5 transition-colors">
+                                <td class="py-5 px-6 font-medium text-white">Zero Infrastructure Setup</td>
+                                <td class="py-5 px-6 text-emerald-400 font-mono flex items-center gap-1.5">
+                                    <iconify-icon icon="lucide:check-circle-2" class="text-lg"></iconify-icon> No Docker / No Postgres
+                                </td>
+                                <td class="py-5 px-6 text-gray-400 font-mono">Requires Cloud API key</td>
+                                <td class="py-5 px-6 text-gray-400 font-mono">Docker + Qdrant stack</td>
+                            </tr>
+                            <tr class="hover:bg-white/5 transition-colors">
+                                <td class="py-5 px-6 font-medium text-white">Cross-Tool Capture Bridge</td>
+                                <td class="py-5 px-6 text-emerald-400 font-mono flex items-center gap-1.5">
+                                    <iconify-icon icon="lucide:check-circle-2" class="text-lg"></iconify-icon> MCP + Hotkey Listener
+                                </td>
+                                <td class="py-5 px-6 text-gray-400 font-mono">MCP server only</td>
+                                <td class="py-5 px-6 text-gray-400 font-mono">Custom API SDKs</td>
+                            </tr>
+                            <tr class="hover:bg-white/5 transition-colors">
+                                <td class="py-5 px-6 font-medium text-white">Visual Proof Dashboard</td>
+                                <td class="py-5 px-6 text-emerald-400 font-mono flex items-center gap-1.5">
+                                    <iconify-icon icon="lucide:check-circle-2" class="text-lg"></iconify-icon> Live WebSocket Feed
+                                </td>
+                                <td class="py-5 px-6 text-gray-400 font-mono">Cloud Dashboard</td>
+                                <td class="py-5 px-6 text-gray-400 font-mono">Hosted UI</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="contact" class="py-24 border-t border-white/10 bg-[#050505] relative overflow-hidden">
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
+                    <div class="w-full md:w-auto">
+                        <h2 class="text-[11vw] leading-[0.8] tracking-tighter text-white/10 font-bold select-none pointer-events-none font-serif">
+                            CONTEXTRAIL.
+                        </h2>
+                    </div>
+                    
+                    <div class="flex flex-col gap-8 text-right">
+                        <div class="flex flex-col md:flex-row gap-6 text-gray-400 text-sm font-medium">
+                            <a href="#expertise" class="hover:text-[#FF4500] transition-colors">Philosophy</a>
+                            <a href="#works" class="hover:text-[#FF4500] transition-colors">Pillars</a>
+                            <a href="#simulator" class="hover:text-[#FF4500] transition-colors">Simulator</a>
+                            <a href="#perspectives" class="hover:text-[#FF4500] transition-colors">Matrix</a>
+                        </div>
+                        <p class="text-sm text-gray-500 font-mono">
+                            Built for C Fall 2026 x Moss — The Zero Latency Builder Sprint.<br />
+                            © 2026 Contextrail. 100% On-Device & Privacy Preserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Script Import -->
+    <script src="script.js"></script>
+</body>
+</html>
